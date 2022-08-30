@@ -72,11 +72,21 @@ body {
     padding: 1.5em;
 }
 
-a {
+
+button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+}
+
+a, button {
     text-decoration: none;
     color: var(--desaturated-blue);
     display: block;
 }
+
 
 .menu {
     padding: 1.5em;
