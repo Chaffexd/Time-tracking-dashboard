@@ -121,7 +121,7 @@ fetch("/data.json")
         const previousStats = card.querySelector(".previous");
   
         currentStats.textContent = `${data[idx].timeframes.weekly.current}hrs`;
-        previousStats.textContent = `Last Month - ${data[idx].timeframes.weekly.previous}hrs`;
+        previousStats.textContent = `Last Week - ${data[idx].timeframes.weekly.previous}hrs`;
       });
     //   //Work section
     //   currentWorkHours.textContent = `${data[0].timeframes.weekly.current}hrs`;
