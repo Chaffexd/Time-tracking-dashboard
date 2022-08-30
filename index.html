@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+
+  <main class="cardContainer">
+    <div class="item1">
+      <div class="profile">
+        <img class="headshot" src="/images/image-jeremy.png" alt="Headshot of person">
+        <div>
+          <p class="report">Report for</p>
+          <h2 class="name">Jeremy Robson</h2>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#" id="daily" class="active">Daily</a>
+        <a href="#" id="weekly">Weekly</a>
+        <a href="#" id="monthly">Monthly</a>
+      </div>
+    </div>
+    <div class="item2">
+      <div class="work"></div>
+      <div class="workTime">
+        <div class="title">
+          <p class="workTitle">Work</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentWorkHours">4hrs</p>
+          <p class="previous">Last <span id="dwm">Week</span> - <span id="workHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="item3">
+      <div class="play"></div>
+      <div class="playTime">
+        <div class="title">
+          <p class="workTitle">Play</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentPlayHours">4hrs</p>
+          <p class="previous">Last <span id="dwm1">Week</span> - <span id="playHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="item4">
+      <div class="study"></div>
+      <div class="studyTime">
+        <div class="title">
+          <p class="workTitle">Study</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentStudyHours">4hrs</p>
+          <p class="previous">Last <span id="dwm2">Week</span> - <span id="studyHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="item5">
+      <div class="exercise"></div>
+      <div class="exerciseTime">
+        <div class="title">
+          <p class="workTitle">Exercise</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentExerciseHours">4hrs</p>
+          <p class="previous">Last <span id="dwm3">Week</span> - <span id="exerciseHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="item6">
+      <div class="social"></div>
+      <div class="socialTime">
+        <div class="title">
+          <p class="workTitle">Social</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentSocialHours">4hrs</p>
+          <p class="previous">Last <span id="dwm4">Week</span> - <span id="socialHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="item7">
+      <div class="selfcare"></div>
+      <div class="selfcareTime">
+        <div class="title">
+          <p class="workTitle">Self Care</p>
+          <p class="dotIcon"><a href="#">...</a></p>
+        </div>
+        <div class="timeRecorded">
+          <p class="hours" id="currentSelfCareHours">4hrs</p>
+          <p class="previous">Last <span id="dwm5">Week</span> - <span id="selfCareHours">5hrs</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="timetrack.js"></script>
+</body>
+</html>

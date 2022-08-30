@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-selfcare: hsl(43, 84%, 65%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+    height: 65%;
+    gap: 15px 15px;
+}
+
+/* First column */
+
+.item1 {
+    grid-row: 1 / span 2;
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+
+.headshot {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+.report {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: .3em;
+}
+
+.name {
+    font-size: 35px;
+    color: white;
+    font-weight: 300;
+}
+
+.profile {
+    height: 54.9%;
+    border-radius: 10px;
+    background-color: var(--blue);
+    padding: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    display: block;
+}
+
+.menu {
+    padding: 1.5em;
+    height: 24.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Other containers */
+.work, .play, .study, .exercise, .social, .selfcare {
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position : right 15px bottom -10px;
+    background-color: var(--light-red-work);
+    border-radius: 10px 10px 0 0;
+    height: 23%;
+}
+
+.work, .play, .study {
+    background-position : right 15px bottom -20px;
+}
+
+.exercise, .social {
+    background-position : right 15px bottom -6px;
+}
+
+.play{
+    background-image: url(/images/icon-play.svg);
+    background-color: var(--soft-blue-play);
+}
+
+.study {
+    background-image: url(/images/icon-study.svg);
+    background-color: var(--light-red-study);
+}
+
+.exercise {
+    background-image: url(/images/icon-exercise.svg);
+    background-color: var(--lime-green-exercise);
+}
+
+.social {
+    background-image: url(/images/icon-social.svg);
+    background-color: var(--violet-social);
+}
+
+.selfcare {
+    background-image: url(/images/icon-self-care.svg);
+    background-color: var(--soft-orange-selfcare);
+}
+
+.workTime, .playTime, .studyTime, .exerciseTime, .socialTime, .selfcareTime {
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: -6px;
+    z-index: 2;
+    background-color: var(--dark-blue);
+}
+
+/* Text inside containers */
+.workTime, .playTime, .studyTime, .exerciseTime, .socialTime, .selfcareTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+.title {
+    display: inherit;
+}
+
+.workTitle {
+    width: 50%;
+}
+
+.dotIcon {
+    width: 50%;
+    position: relative;
+    top: -3px;
+    text-align: right;
+}
+
+.dotIcon a {
+    text-decoration: none;
+    color: white;
+}
+
+.hours {
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.previous {
+    font-weight: 300;
+    color: var(--desaturated-blue);
+}
+
+.active {
+    color: white;
+    transition: ease .4s;
+}
+
+@media only screen and (max-width: 700px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        height: 100%;
+        width: 90%;
+    }
+    .item1, .item2, .item3, .item4, .item5, .item6 {
+        height: 15em;
+    }
+    .item1 {
+        height: 15em !important;
+    }
+    .workTime {
+        display: flex;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        height: 50%;
+    }
+    .timeRecorded {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hours {
+        display: inline;
+    }
+    .previous {
+        display: inline;
+    }
+    .headshot {
+        margin-bottom: 0;
+        margin-right: 1em;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 10%;
+    }
+}
