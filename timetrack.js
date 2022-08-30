@@ -43,27 +43,27 @@ fetch("/data.json")
         //Work section
         currentWorkHours.textContent = `${data[0].timeframes.daily.current}hrs`;
         workHours.textContent = `${data[0].timeframes.daily.previous}hrs`;
-        dayWeekMonth.textContent = "Day";
+        dayWeekMonth.textContent = "Yesterday";
         //Play section
         currentPlayHours.textContent = `${data[1].timeframes.daily.current}hrs`;
         playHours.textContent = `${data[1].timeframes.daily.previous}hrs`;
-        dayWeekMonth1.textContent = "Day";
+        dayWeekMonth1.textContent = "Yesterday";
         //Study section
         currentStudyHours.textContent = `${data[2].timeframes.daily.current}hrs`;
         studyHours.textContent = `${data[2].timeframes.daily.previous}hrs`;
-        dayWeekMonth2.textContent = "Day";
+        dayWeekMonth2.textContent = "Yesterday";
         //Exercise section
         currentExerciseHours.textContent = `${data[3].timeframes.daily.current}hrs`;
         exerciseHours.textContent = `${data[3].timeframes.daily.previous}hrs`;
-        dayWeekMonth3.textContent = "Day";
+        dayWeekMonth3.textContent = "Yesterday";
         //Social section
         currentSocialHours.textContent = `${data[4].timeframes.daily.current}hrs`;
         socialHours.textContent = `${data[4].timeframes.daily.previous}hrs`;
-        dayWeekMonth4.textContent = "Day";
+        dayWeekMonth4.textContent = "Yesterday";
         //Self Care section
         currentSelfCareHours.textContent = `${data[5].timeframes.daily.current}hrs`;
         selfCareHours.textContent = `${data[5].timeframes.daily.previous}hrs`;
-        dayWeekMonth5.textContent = "Day"; 
+        dayWeekMonth5.textContent = "Yesterday"; 
 
         daily.addEventListener("click" , () => {
             daily.classList.add("active");
@@ -72,27 +72,27 @@ fetch("/data.json")
             //Work section
             currentWorkHours.textContent = `${data[0].timeframes.daily.current}hrs`;
             workHours.textContent = `${data[0].timeframes.daily.previous}hrs`;
-            dayWeekMonth.textContent = "Day";
+            dayWeekMonth.textContent = "Yesterday";
             //Play section
             currentPlayHours.textContent = `${data[1].timeframes.daily.current}hrs`;
             playHours.textContent = `${data[1].timeframes.daily.previous}hrs`;
-            dayWeekMonth1.textContent = "Day";
+            dayWeekMonth1.textContent = "Yesterday";
             //Study section
             currentStudyHours.textContent = `${data[2].timeframes.daily.current}hrs`;
             studyHours.textContent = `${data[2].timeframes.daily.previous}hrs`;
-            dayWeekMonth2.textContent = "Day";
+            dayWeekMonth2.textContent = "Yesterday";
             //Exercise section
             currentExerciseHours.textContent = `${data[3].timeframes.daily.current}hrs`;
             exerciseHours.textContent = `${data[3].timeframes.daily.previous}hrs`;
-            dayWeekMonth3.textContent = "Day";
+            dayWeekMonth3.textContent = "Yesterday";
             //Social section
             currentSocialHours.textContent = `${data[4].timeframes.daily.current}hrs`;
             socialHours.textContent = `${data[4].timeframes.daily.previous}hrs`;
-            dayWeekMonth4.textContent = "Day";
+            dayWeekMonth4.textContent = "Yesterday";
             //Self Care section
             currentSelfCareHours.textContent = `${data[5].timeframes.daily.current}hrs`;
             selfCareHours.textContent = `${data[5].timeframes.daily.previous}hrs`;
-            dayWeekMonth5.textContent = "Day";   
+            dayWeekMonth5.textContent = "Yesterday";   
         });
         weekly.addEventListener("click", () => {
             weekly.classList.add("active");
@@ -101,27 +101,27 @@ fetch("/data.json")
             //Work section
             currentWorkHours.textContent = `${data[0].timeframes.weekly.current}hrs`;
             workHours.textContent = `${data[0].timeframes.weekly.previous}hrs`;
-            dayWeekMonth.textContent = "Week";
+            dayWeekMonth.textContent = "Last Week";
             //Play section
             currentPlayHours.textContent = `${data[1].timeframes.weekly.current}hrs`;
             playHours.textContent = `${data[1].timeframes.weekly.previous}hrs`;
-            dayWeekMonth1.textContent = "Week";
+            dayWeekMonth1.textContent = "Last Week";
             //Study section
             currentStudyHours.textContent = `${data[2].timeframes.weekly.current}hrs`;
             studyHours.textContent = `${data[2].timeframes.weekly.previous}hrs`;
-            dayWeekMonth2.textContent = "Week";
+            dayWeekMonth2.textContent = "Last Week";
             //Exercise section
             currentExerciseHours.textContent = `${data[3].timeframes.weekly.current}hrs`;
             exerciseHours.textContent = `${data[3].timeframes.weekly.previous}hrs`;
-            dayWeekMonth3.textContent = "Week";
+            dayWeekMonth3.textContent = "Last Week";
             //Social section
             currentSocialHours.textContent = `${data[4].timeframes.weekly.current}hrs`;
             socialHours.textContent = `${data[4].timeframes.weekly.previous}hrs`;
-            dayWeekMonth4.textContent = "Week";
+            dayWeekMonth4.textContent = "Last Week";
             //Self Care section
             currentSelfCareHours.textContent = `${data[5].timeframes.weekly.current}hrs`;
             selfCareHours.textContent = `${data[5].timeframes.weekly.previous}hrs`;
-            dayWeekMonth5.textContent = "Week";   
+            dayWeekMonth5.textContent = "Last Week";   
         });
         monthly.addEventListener("click", () => {
             daily.classList.remove("active")
@@ -130,27 +130,27 @@ fetch("/data.json")
             //Work section
             currentWorkHours.textContent = `${data[0].timeframes.monthly.current}hrs`;
             workHours.textContent = `${data[0].timeframes.monthly.previous}hrs`;
-            dayWeekMonth.textContent = "Month";
+            dayWeekMonth.textContent = "Last Month";
             //Play section
             currentPlayHours.textContent = `${data[1].timeframes.monthly.current}hrs`;
             playHours.textContent = `${data[1].timeframes.monthly.previous}hrs`;
-            dayWeekMonth1.textContent = "Month";
+            dayWeekMonth1.textContent = "Last Month";
             //Study section
             currentStudyHours.textContent = `${data[2].timeframes.monthly.current}hrs`;
             studyHours.textContent = `${data[2].timeframes.monthly.previous}hrs`;
-            dayWeekMonth2.textContent = "Month";
+            dayWeekMonth2.textContent = "Last Month";
             //Exercise section
             currentExerciseHours.textContent = `${data[3].timeframes.monthly.current}hrs`;
             exerciseHours.textContent = `${data[3].timeframes.monthly.previous}hrs`;
-            dayWeekMonth3.textContent = "Month";
+            dayWeekMonth3.textContent = "Last Month";
             //Social section
             currentSocialHours.textContent = `${data[4].timeframes.monthly.current}hrs`;
             socialHours.textContent = `${data[4].timeframes.monthly.previous}hrs`;
-            dayWeekMonth4.textContent = "Month";
+            dayWeekMonth4.textContent = "Last Month";
             //Self Care section
             currentSelfCareHours.textContent = `${data[5].timeframes.monthly.current}hrs`;
             selfCareHours.textContent = `${data[5].timeframes.monthly.previous}hrs`;
-            dayWeekMonth5.textContent = "Month";   
+            dayWeekMonth5.textContent = "Last Month";   
         });
     })
 

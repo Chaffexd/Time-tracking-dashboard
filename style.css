@@ -172,6 +172,7 @@ a {
 .hours {
     font-size: 3.5em;
     font-weight: 300;
+    transition: .5s ease;
 }
 
 .previous {
@@ -213,6 +214,7 @@ a {
     }
     .hours {
         display: inline;
+        transition: .5s ease;
     }
     .previous {
         display: inline;
@@ -226,5 +228,12 @@ a {
         align-items: center;
         flex-direction: row;
         height: 10%;
+    }
+    .selfcare {
+        height: 30%;
+    }
+    .selfcareTime {
+        height: 10em;
+        margin-bottom: 1em;
     }
 }
